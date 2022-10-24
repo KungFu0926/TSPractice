@@ -1,0 +1,27 @@
+/*
+    這個文件為TS編譯器的配置文件，可以根據他的信息進行編譯
+    include 指定那些需要被追蹤文檔的路徑    "include":[<路徑>] /**表示任意目錄 /*表示任意項目
+    exclude 指定那些不需要被追蹤文檔的路徑  "exclude":[<路徑>]
+    extends 繼承
+    files   文件
+    complierOptions:target用來指定TS被編譯成的ES版本，ex(ES3,ES4,ES5...)
+                    module用來指定要使用的模塊化規範，ex(ES3,ES4,ES5...)隨便輸入讓CMD提示你也可以
+                    outDir指定TS編譯後的JScode存放位置
+                    outFile將全作用域中的TScode合併轉換成一個JScode(如果有用模塊化只能用amd)
+                    allowJs是否編譯JScode，default=false
+                    checkJs檢查JScode是否合乎JScode規範，default=false
+                    removeComment從TS->JS是否移除註解
+                    noEmit不生成編譯後的JS文件，default=false
+                    noEmitOnError若TScode編譯錯誤則不產生JScode，default=false
+                    alwaysStrict編譯後的JScode使用嚴格模式提升效能，default=false
+                    noImplicitAny不自動將未指定參數類別設為any，default=false
+                    noImplicitThis不允許不明類型的this，default=false
+                    strictNullChecks嚴格檢查NULL，default=false
+                    
+
+*/
+{
+    "compilerOptions": {
+    "outDir": "JScode"
+    }
+}
