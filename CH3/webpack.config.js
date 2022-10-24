@@ -30,7 +30,7 @@ module.exports=
                 use:'ts-loader',
 
                 //要排除的文件
-                exclude:/node_modules/
+                exclude:/node-modules/
             }
         ]
     }
