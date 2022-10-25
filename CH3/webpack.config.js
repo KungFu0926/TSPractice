@@ -1,5 +1,7 @@
 //引入一個封包
 const path =require('path');
+//引入html插件
+const HTMLWebpackPlugin=require('html-webpack-plugin');
 
 //webpack中的所有配置訊息都應該寫在module.exports中
 module.exports=
@@ -33,5 +35,8 @@ module.exports=
                 exclude:/node-modules/
             }
         ]
-    }
+    },
+    plugins:[
+        new HTMLWebpackPlugin(),
+    ]
 }
